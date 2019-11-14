@@ -1,2 +1,0 @@
-# warehouse-system
-promul
