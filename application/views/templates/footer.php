@@ -50,14 +50,15 @@
 	</script>
 
 
-  <footer>
-    <div class="footer-container">
-      <div>
-        <p>© 2019 Proyek Multidisiplin</p>
-        <p>Jakarta Selatan<a href="universitaspertamina.ac.id"> Universitas Pertamina</a>.</p>
-      </div>
-    </div>
-  </footer>	
-  
+    <!-- Sticky Footer -->
+    <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>© 2019 Proyek Multidisiplin</span>
+            <span>Jakarta Selatan, <a href="universitaspertamina.ac.id"> Universitas Pertamina</a>.</span>
+          </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
