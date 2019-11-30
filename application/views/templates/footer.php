@@ -1,12 +1,63 @@
-<footer class="mastfoot mt-auto">
-        <div class="inner">
-        <p>© 2019 Proyek Multidisiplin <a href="universitaspertamina.ac.id">Universitas Pertamina</a>.</p>
-        </div>
-    </footer>
-    </div>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="<?php echo base_url()?>assets/js/jquery-1.11.1.min.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/bootstrap.min.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/chart.min.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/chart-data.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/easypiechart.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/easypiechart-data.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/bootstrap-datepicker.js"></script>
+	<script src="<?php echo base_url()?>assetsjs/custom.js"></script>
+	<script>
+	window.onload = function () {
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+	var chart2 = document.getElementById("bar-chart").getContext("2d");
+	window.myBar = new Chart(chart2).Bar(barChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+	var chart3 = document.getElementById("doughnut-chart").getContext("2d");
+	window.myDoughnut = new Chart(chart3).Doughnut(doughnutData, {
+	responsive: true,
+	segmentShowStroke: false
+	});
+	var chart4 = document.getElementById("pie-chart").getContext("2d");
+	window.myPie = new Chart(chart4).Pie(pieData, {
+	responsive: true,
+	segmentShowStroke: false
+	});
+	var chart5 = document.getElementById("radar-chart").getContext("2d");
+	window.myRadarChart = new Chart(chart5).Radar(radarData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.05)",
+	angleLineColor: "rgba(0,0,0,.2)"
+	});
+	var chart6 = document.getElementById("polar-area-chart").getContext("2d");
+	window.myPolarAreaChart = new Chart(chart6).PolarArea(polarData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	segmentShowStroke: false
+	});
+};
+	</script>
+
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <p>© 2019 Proyek Multidisiplin</p>
+        <p>Jakarta Selatan<a href="universitaspertamina.ac.id"> Universitas Pertamina</a>.</p>
+      </div>
+    </div>
+  </footer>	
+  
 </body>
 </html>

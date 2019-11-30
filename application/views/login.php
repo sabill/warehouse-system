@@ -1,71 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<head> 
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Masuk/Login</title>
-
-	<style>
-		html,
-		body {
-		height: 100%;
-		}
-
-		body {
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-align: center;
-		align-items: center;
-		padding-top: 40px;
-		padding-bottom: 40px;
-		background-color: #f5f5f5;
-		}
-
-		.form-signin {
-		width: 100%;
-		max-width: 330px;
-		padding: 15px;
-		margin: auto;
-		}
-		.form-signin .checkbox {
-		font-weight: 400;
-		}
-		.form-signin .form-control {
-		position: relative;
-		box-sizing: border-box;
-		height: auto;
-		padding: 10px;
-		font-size: 16px;
-		}
-		.form-signin .form-control:focus {
-		z-index: 2;
-		}
-		.form-signin input[type="email"] {
-		margin-bottom: -1px;
-		border-bottom-right-radius: 0;
-		border-bottom-left-radius: 0;
-		}
-		.form-signin input[type="password"] {
-		margin-bottom: 10px;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		}
-	</style>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="<?php echo base_url('assets/images/icons/favicon.ico')?>"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css')?>">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')?>">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/animate/animate.css')?>">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/css-hamburgers/hamburgers.min.css')?>">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/animsition/css/animsition.min.css')?>">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/select2/select2.min.css')?>">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/vendor/daterangepicker/daterangepicker.css')?>">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/util.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css')?>">
+<!--===============================================================================================-->
 </head>
-<body>
-	<form class="form-signin">
-	<img class="mb-4" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-	<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-	<label for="inputEmail" class="sr-only">Email address</label>
-	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-	<label for="inputPassword" class="sr-only">Password</label>
-	<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-	<div class="checkbox mb-3">
-		<label>
-		<input type="checkbox" value="remember-me"> Remember me
-		</label>
+<body style="background-image: url('assets/images/cover 1.jpg'); background-size: cover;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-30 p-b-50">	
+				<form class="login100-form validate-form p-b-33 p-t-5">
+					<div class="container-login100-form-btn m-t-32">
+						<span class="login100-form-title p-b-1">
+							<img style="width: 40%" src="assets/images/logoPL.png" alt="Logo">
+							<p style="color: black font-size:30px">Sistem Informasi Warehouse</p>
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="username" placeholder="User name">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-32">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
 	</div>
-	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="assets/js/main.js"></script>
