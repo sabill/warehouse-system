@@ -114,7 +114,7 @@
       </li>
 
 	  <li class="nav-item active">
-        <a class="nav-link" href="<?php echo site_url('permintaan')?>">
+        <a class="nav-link" href="<?= site_url()?>permintaan">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Form Permintaan</span>
         </a>
@@ -125,7 +125,7 @@
           <i class="fas fa-fw fa-folder"></i>
           <span>History</span>
         </a>
-        <div class="dropdown-menu show" aria-labelledby="pagesDropdown">
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <a class="dropdown-item" href="<?= site_url()?>barangin">Barang Masuk</a>
 		<div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?= site_url()?>barangout">Barang Keluar</a>
@@ -134,7 +134,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= site_url()?>#">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Operator</span></a>
       </li>
@@ -144,12 +144,19 @@
           <span>Operator</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= site_url()?>profile">
           <i class="fas fa-fw fa-table"></i>
-          <span>Profil Pengguna</span></a>
+		  <span>Profil Pengguna</span>
+		</a>
+	  </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="<?= site_url()?>login">
+          <i class="fas fa-fw fa-table"></i>
+		  <span>Logout</span><!--ini nanti keluar alert, kalo yes ke login ya han-->
+		</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= site_url()?>about">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>About</span></a>
       </li>

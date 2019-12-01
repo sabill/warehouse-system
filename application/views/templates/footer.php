@@ -55,10 +55,10 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>© 2019 Proyek Multidisiplin</span>
-            <span>Jakarta Selatan, <a href="universitaspertamina.ac.id"> Universitas Pertamina</a>.</span>
+            <span>Jakarta Selatan, <a href="universitaspertamina.ac.id">Universitas Pertamina</a>.</span>
           </div>
         </div>
     </footer>
-</div>
+
 </body>
 </html>

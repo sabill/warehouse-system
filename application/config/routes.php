@@ -55,5 +55,7 @@ $route['permintaan'] = 'permintaan';
 $home['dashboard'] = 'dashboard';
 $header['header'] = 'header';
 $footer['footer'] = 'footer';
+$profile['profile']='profile';
+$forget['forget']='forget';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

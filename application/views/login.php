@@ -49,12 +49,14 @@
 						<input class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
-
+					<div  class="text-center">
+					<span><a href="<?= site_url()?>forget">Forget Password</a></span>
 					<div class="container-login100-form-btn m-t-32">
 						<button class="login100-form-btn">
 							Login
 						</button>
 					</div>
+				</div>
 
 				</form>
 			</div>

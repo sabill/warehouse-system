@@ -108,7 +108,7 @@
             <fieldset>
                 <legend><span class="img"><img src="assets/images/icons/interview.png" alt="request" style="width:9%"></span> Permintaan</legend>
                 <div style="background-color: #B38080 color: #FFFFFF">
-                <h3 style="position: center">FORMULIR PERMINTAAN PRODUKSI</h3>
+                <h4>FORMULIR PERMINTAAN PRODUKSI</h3>
                 </div>
 
                 <label for="job">Item:</label>
@@ -146,4 +146,4 @@
             </fieldset>
             <input type="submit" value="Request" />
         </form>
-
+    </div>
