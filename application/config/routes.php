@@ -52,6 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['login'] = 'login';
 $route['permintaan'] = 'permintaan';
+$route['barangin']=['barangin'];
+$route['barangout']=['barangout'];
 $home['dashboard'] = 'dashboard';
 $header['header'] = 'header';
 $footer['footer'] = 'footer';
