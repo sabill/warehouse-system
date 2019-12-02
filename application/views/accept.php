@@ -5,15 +5,14 @@
                 <a href="#">Dashboard</a>
             </li>
             <li class="breadcrumb-item active">
-                Barang Masuk
+                Terima Permintaan
             </li>
         </ol>
 
 <!-- Data Barang Masuk -->
 <div class="card mb-3">
         <div class="card-header">
-            <i class="fas fa-table"></i>Daftar Barang Masuk
-            <button class="btn btn-primary" value="click me" style="float: right;">Tambah Item</button>
+            <i class="fas fa-table"></i>Daftar Permintaan
         </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -21,13 +20,11 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>ID Item</th>
-                    <th>Nomor PO</th>
-                    <th>Pengirim</th>
-                    <th>Gudang</th>
+                    <th>Tanggal Permintaan</th>
+                    <th>Item</th>
                     <th>Kuantitas</th>
-                    <th>Tgl Masuk</th>
-                    <th>Edit</th>
+                    <th>Lokasi</th>
+                    <th>Status</th>
                   </tr>
                 </thead>
                 <!--
@@ -50,12 +47,7 @@
                     <td><a href="#">Example 1</a></td>
                     <td><a href="#">Example 1</a></td>
                     <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">
-                      <span class="glyphicon glyphicon-trash"></span>
-                      <span class="glyphicon glyphicon-pencil"></span>
-                    </a></td>
+                    <td><a href="#"><button class="btn btn-primary" id="agree=button" type="submit">Accept</button></a></td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -63,12 +55,7 @@
                     <td><a href="#">Example 1</a></td>
                     <td><a href="#">Example 1</a></td>
                     <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td>
-                      <a href=""><span class="glyphicon glyphicon-trash"></span></a>
-                      <a href=""><span class="glyphicon glyphicon-pencil"></span></a>
-                    </td>
+                    <td><a href="#"><button class="btn btn-primary" id="agree=button" type="submit">Accept</button></a></td>
                   </tr>
                 </tbody>
               </table>

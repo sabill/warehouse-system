@@ -103,47 +103,48 @@
         }
 </style>
 
-    <div class="form-style-5">
-        <form>
-            <fieldset>
-                <legend><span class="img"><img src="assets/images/icons/interview.png" alt="request" style="width:9%"></span> Permintaan</legend>
-                <div style="background-color: #B38080 color: #FFFFFF">
-                <h4>FORMULIR PERMINTAAN PRODUKSI</h3>
-                </div>
+        
+        <div class="form-style-5">
+            <form>
+                <fieldset>
+                    <legend><span class="img"><img src="assets/images/icons/interview.png" alt="request" style="width:9%"></span> Permintaan</legend>
+                    <div style="background-color: #B38080 color: #FFFFFF">
+                    <h4>FORMULIR PERMINTAAN PRODUKSI</h3>
+                    </div>
 
-                <label for="job">Item:</label>
-                <select id="job" name="field4">
-                    <optgroup label="Item A">
-                        <option value="#">Item I</option>
-                        <option value="#">Item II</option>
-                    </optgroup>
-                    <optgroup label="Item B">
-                        <option value="#">Item I</option>
-                        <option value="#">Item II</option>
-                    </optgroup>
-                </select>
-                <label for="job">Kuantitas:</label>
-                <input type="text" name="field1" placeholder="Fill Quantity">
-                <label for="job">Kuantitas:</label>
-                <label class="container">
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="checkmark"></span>
-                    LOBP 1
-                </label>
-                <label class="container">
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                    LOBP 2
-                </label>
-                <label class="container">
-                    <span class="checkmark">
+                    <label for="job">Item:</label>
+                    <select id="job" name="field4">
+                        <optgroup label="Item A">
+                            <option value="#">Item I</option>
+                            <option value="#">Item II</option>
+                        </optgroup>
+                        <optgroup label="Item B">
+                            <option value="#">Item I</option>
+                            <option value="#">Item II</option>
+                        </optgroup>
+                    </select>
+                    <label for="job">Kuantitas:</label>
+                    <input type="text" name="field1" placeholder="Fill Quantity">
+                    <label for="job">Lokasi:</label>
+                    <label class="container">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                        LOBP 1
+                    </label>
+                    <label class="container">
                         <input type="radio" name="radio">
-                        <input type="text">
-                    </span>
-                    
-                </label>
-                      
-            </fieldset>
-            <input type="submit" value="Request" />
-        </form>
-    </div>
+                        <span class="checkmark"></span>
+                        LOBP 2
+                    </label>
+                    <label class="container">
+                        <span class="checkmark">
+                            <input type="radio" name="radio">
+                            <input type="text">
+                        </span>
+                        
+                    </label>
+                        
+                </fieldset>
+                <input type="submit" value="Request" />
+            </form>
+        </div>

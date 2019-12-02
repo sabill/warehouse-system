@@ -81,6 +81,12 @@
                           <li class="paginate_button page-item active">
                               <a href="#" aria-controls="dataTable" data-dt-idx="2" tabidex="0" class="page-link">2</a>
                           </li>
+                          <li class="paginate_button page-item active">
+                              <a href="#" aria-controls="dataTable" data-dt-idx="2" tabidex="0" class="page-link">3</a>
+                          </li>
+                          <li class="paginate_button page-item active">
+                              <a href="#" aria-controls="dataTable" data-dt-idx="2" tabidex="0" class="page-link">4</a>
+                          </li>
                           <li class="paginate_button page-item next" id="dataTable_previous">
                               <a href="#" aria-controls="dataTable" data-dt-idx="3" tabidex="0" class="page-link">Next</a>
                           </li>

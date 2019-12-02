@@ -51,7 +51,7 @@
 
 
     <!-- Sticky Footer -->
-    <footer class="sticky-footer">
+    <footer class="sticky-footer" style="bottom= 0px;">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>© 2019 Proyek Multidisiplin</span>
