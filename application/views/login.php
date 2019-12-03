@@ -33,7 +33,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-30 p-b-50">	
-				<form class="login100-form validate-form p-b-33 p-t-5">
+				<form class="login100-form validate-form p-b-33 p-t-5" method="post" action="<?= base_url('login/cek_login') ?>">
 					<div class="container-login100-form-btn m-t-32">
 						<span class="login100-form-title p-b-1">
 							<img style="width: 40%" src="assets/images/logoPL.png" alt="Logo">
