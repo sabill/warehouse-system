@@ -105,7 +105,8 @@
 
         
         <div class="form-style-5">
-            <form method="post" action="add" enctype="multipart/form-data" > 
+        
+            <form method="post" action="<?php echo base_url('permintaan/add') ?>" enctype="multipart/form-data" > 
                 <fieldset>
                     <legend><span class="img"><img src="assets/images/icons/interview.png" alt="request" style="width:9%"></span> Permintaan</legend>
                     <div style="background-color: #B38080 color: #FFFFFF">
@@ -113,36 +114,20 @@
                     </div>
 
                     <label for="job">Item:</label>
-                     <select id="job" name="field4"> <!-- variabel name ini harus sesuai dengan model postnya, contoh = name adalah item maka di model yang di post juga "item" dan begitu juga pada rulesnya --> -->
+                     <select id="job" name="item"> <!-- variabel name ini harus sesuai dengan model postnya, contoh = name adalah item maka di model yang di post juga "item" dan begitu juga pada rulesnya --> -->
                         <optgroup label="Item A">
-                            <option value="#">Item I</option>
-                            <option value="#">Item II</option>
+                            <option value="item1">Item I</option>
+                            <option value="item2">Item II</option>
                         </optgroup>
                         <optgroup label="Item B">
-                            <option value="#">Item I</option>
-                            <option value="#">Item II</option>
+                            <option value="item3">Item III</option>
+                            <option value="item4">Item IV</option>
                         </optgroup>
                     </select>
                     <label for="job">Kuantitas:</label>
-                    <input type="text" name="field1" placeholder="Fill Quantity">
+                    <input type="text" name="kuantitas" placeholder="Fill Quantity">
                     <label for="job">Lokasi:</label>
-                    <label class="container">
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                        LOBP 1
-                    </label>
-                    <label class="container">
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                        LOBP 2
-                    </label>
-                    <label class="container">
-                        <span class="checkmark">
-                            <input type="radio" name="radio">
-                            <input type="text">
-                        </span>
-                        
-                    </label>
+                    <input type="text" name="lokasi" placeholder="Fill Location"/>
                         
                 </fieldset>
                 <input type="submit" value="Request" />

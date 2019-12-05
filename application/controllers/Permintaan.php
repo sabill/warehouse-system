@@ -32,6 +32,22 @@ class Permintaan extends CI_Controller
 		$this->load->view('templates/header');
         $this->load->view('permintaan');
 		$this->load->view('templates/footer');
-		}
+	}
+
+	public function submitPermintaan()
+	{
+		$item = $this->input->post('item');
+		$kuantitas = $this->input->post('kuantitas');
+		$lokasi = $this->input->post('lokasi');
+
+		$dataPermintaan = array(
+			'item' => $item,
+			'kuantitas' => $kuantitas,
+			'lokasi' => $lokasi
+		);
+
+		
+
+	}
 	
 } 

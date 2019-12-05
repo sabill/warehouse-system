@@ -5,9 +5,9 @@ class Permintaan_model extends CI_model
 {
     private $_table = "requestproduction";
 
-    public $dataMaterial;
-    public $tanggalRequest;
-    public $operator_id;
+    public $item;
+    public $kuantitas;
+    public $lokasi;
 
     public function rules()
     {
@@ -39,9 +39,11 @@ class Permintaan_model extends CI_model
     public function save()
     {
         $post = $this->input->post();
-        $this->operator_id = uniqid();
-        $this->dataMaterial = $post["dataMaterial"];
-        $this->tanggalRequest = $post["tanggalRequest"];
+        //$this->operator_id = uniqid();
+        $this->item = $post["item"];
+        $this->kuantitas = $post["kuantitas"];
+        $this->lokasi = $post["lokasi"];
+
         $this->db->insert($this->_table, $this);
     }
 
@@ -57,6 +59,11 @@ class Permintaan_model extends CI_model
     public function delete($id)
     {
         return $this->db->delete($this->_table, array("operator_id" => $id));
+    }
+
+    public function add($dataPermintaan)
+    {
+        $this->db->insert('requestProduction', $dataPermintaan);
     }
 
 }
