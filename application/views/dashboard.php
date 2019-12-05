@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="col-md-10">
     <div class="container-fluid">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
