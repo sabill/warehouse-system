@@ -1,13 +1,13 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Permintaan_model extends CI_model 
+class Barangin_model extends CI_model 
 {
-    private $_table = "requestproduction";
+    private $_table = "receiving";
 
-    public $item;
-    public $kuantitas;
-    public $lokasi;
+    public $nomorPO;
+    public $dataPemasok;
+    public $dataMaterial;
 
     public function rules()
     {
@@ -28,16 +28,6 @@ class Permintaan_model extends CI_model
 
     public function getAll()
     {
-        return $this->db->get($this->_table)->result();
-    }
-
-    public function setAgree($id)
-    {
-        $data = [
-            'status' => true,
-        ];
-        $this->db->where('item_id', $id);
-        $this->db->update($this->_table, $data);
         return $this->db->get($this->_table)->result();
     }
 

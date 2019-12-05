@@ -21,6 +21,12 @@ class Accept extends CI_Controller {
         $this->load->view('templates/footer');
 	}
 
+	public function agree($id)
+	{
+		$this->Permintaan_model->setAgree($id);
+		redirect('accept');
+	}
+
 
 
 }

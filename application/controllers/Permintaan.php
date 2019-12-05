@@ -16,7 +16,10 @@ class Permintaan extends CI_Controller
 		$this->load->view('templates/header');
         $this->load->view('permintaan', $data);
 		$this->load->view('templates/footer');
+
 	}
+
+	
 
 	public function add()
 	{

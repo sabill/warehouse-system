@@ -49,21 +49,27 @@
                   echo('<tbody>
                   <tr>
                     <td>'.$i.'</td>
-                    <td><a href="#">'.$row->tanggal.' 1</a></td>
+                    <td><a href="#">'.$date[0].' 1</a></td>
                     <td><a href="#">'.$row->item.'</a></td>
                     <td><a href="#">'.$row->kuantitas.'</a></td>
-                    <td><a href="#">'.$date[0].'</a></td>
-                    <td><a href="#"><button class="btn btn-primary" id="agree=button" type="submit">Accept</button></a></td>
-                  </tr>
-                </tbody>
-              </table>');
-
+                    <td><a href="#">'.$row->lokasi.'</a></td>');
+                    if($row->status == false){
+                      echo(' <td><a href="'.base_url('accept/agree/'.$row->item_id.'').'"><button class="btn btn-primary" id="agree=button" type="submit">Accept</button></a></td>
+                      </tr>
+                    </tbody>');
+                    }
+                    else{
+                      echo(' <td><a href="#"><button class="btn btn-success" id="agree=button" type="submit">Accepted</button></a></td>
+                      </tr>
+                    </tbody>');
+                    }
+                  
               $i++;
 
                 }
 
                 ?>
-                
+              </table>
             </div>
           </div>
           

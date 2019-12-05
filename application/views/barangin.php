@@ -43,34 +43,25 @@
                   </tr>
                 </tfoot>
                 -->
-                <tbody>
+                <?php 
+                $i = 1;
+                foreach($listdata as $row){
+
+                  $date = explode(" ", $row->tanggal);
+
+                  echo('<tbody>
                   <tr>
-                    <td>1</td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">
-                      <span class="glyphicon glyphicon-trash"></span>
-                      <span class="glyphicon glyphicon-pencil"></span>
-                    </a></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td><a href="#">Example 1</a></td>
-                    <td>
-                      <a href=""><span class="glyphicon glyphicon-trash"></span></a>
-                      <a href=""><span class="glyphicon glyphicon-pencil"></span></a>
-                    </td>
+                    <td>'.$i.'</td>
+                    <td><a href="#">'.$row->tanggal.' 1</a></td>
+                    <td><a href="#">'.$row->item.'</a></td>
+                    <td><a href="#">'.$row->kuantitas.'</a></td>
+                    <td><a href="#">'.$date[0].'</a></td>
                   </tr>
                 </tbody>
+              ');                  
+              $i++;
+                }
+                ?>
               </table>
             </div>
           </div>
