@@ -54,6 +54,7 @@ $route['login'] = 'login';
 $route['permintaan'] = 'permintaan';
 $route['barangin']=['barangin'];
 $route['barangout']=['barangout'];
+$addBarang['addBarang']=['addBarang'];
 $about['about']=['about'];
 $adminonly['adminonly']=['adminonly'];
 $home['accept']=['accept'];
