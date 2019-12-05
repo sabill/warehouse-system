@@ -33,7 +33,7 @@ class Login extends CI_Controller {
 			$this->db->where('username',$username);
 			$this->db->where('password',$password);
 			
-			$data = $this->db->get('staff_produksi')->result_array();
+			$data = $this->db->get('user')->result_array();
 
 			if (count($data)) {
 				redirect(base_url('dashboard'),'refresh');

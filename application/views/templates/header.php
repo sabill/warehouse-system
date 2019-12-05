@@ -134,11 +134,16 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="<?= site_url()?>#">
+        <a class="nav-link" href="<?= site_url()?>barangin">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Operator</span></a>
+          <span>Barang Masuk</span></a>
       </li>
-	  <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link" href="<?= site_url()?>barangout">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Barang Keluar</span></a>
+      </li>
+  	  <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Operator</span></a>

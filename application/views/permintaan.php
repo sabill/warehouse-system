@@ -105,7 +105,7 @@
 
         
         <div class="form-style-5">
-            <form>
+            <form method="post" action="add" enctype="multipart/form-data" > 
                 <fieldset>
                     <legend><span class="img"><img src="assets/images/icons/interview.png" alt="request" style="width:9%"></span> Permintaan</legend>
                     <div style="background-color: #B38080 color: #FFFFFF">
@@ -113,7 +113,7 @@
                     </div>
 
                     <label for="job">Item:</label>
-                    <select id="job" name="field4">
+                     <select id="job" name="field4"> <!-- variabel name ini harus sesuai dengan model postnya, contoh = name adalah item maka di model yang di post juga "item" dan begitu juga pada rulesnya --> -->
                         <optgroup label="Item A">
                             <option value="#">Item I</option>
                             <option value="#">Item II</option>
