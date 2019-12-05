@@ -51,7 +51,7 @@
 	</script>
 
 
-    <!-- Sticky Footer -->
+    <!-- Sticky Footer 
     <footer class="sticky-footer" style="bottom= 0px;">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
@@ -60,6 +60,6 @@
           </div>
         </div>
     </footer>
-
+-->
 </body>
 </html>
