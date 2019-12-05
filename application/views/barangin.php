@@ -5,7 +5,7 @@
                 <a href="#">Dashboard</a>
             </li>
             <li class="breadcrumb-item active">
-                Barang Masuk
+                Barang Baru
             </li>
         </ol>
 
@@ -29,7 +29,7 @@
                     <th>Gudang</th>
                     <th>Kuantitas</th>
                     <th>Tgl Masuk</th>
-                    <th>Edit</th>
+                    <th>Hapus</th>
                   </tr>
                 </thead>
                 <!--
@@ -45,25 +45,28 @@
                   </tr>
                 </tfoot>
                 -->
-                <?php 
-                $i = 1;
-                foreach($listdata as $row){
-
-                  $date = explode(" ", $row->tanggal);
-
-                  echo('<tbody>
+                <tbody>
                   <tr>
-                    <td>'.$i.'</td>
-                    <td><a href="#">'.$row->tanggal.' 1</a></td>
-                    <td><a href="#">'.$row->item.'</a></td>
-                    <td><a href="#">'.$row->kuantitas.'</a></td>
-                    <td><a href="#">'.$date[0].'</a></td>
+                    <td>1</td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#"><button class="btn btn-primary" value="click me" style="float: right;">Hapus</button></a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#">Example 1</a></td>
+                    <td><a href="#"><button class="btn btn-primary" value="click me" style="float: right;">Hapus</button></a></td>
                   </tr>
                 </tbody>
-              ');                  
-              $i++;
-                }
-                ?>
               </table>
             </div>
           </div>
